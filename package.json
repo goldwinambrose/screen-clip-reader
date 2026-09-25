@@ -1,0 +1,10 @@
+{
+  "name": "screen-clip-reader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build-time dependency manifest for the bundled OCR engine.",
+  "devDependencies": {
+    "tesseract.js": "7.0.0",
+    "tesseract.js-core": "7.0.0"
+  }
+}

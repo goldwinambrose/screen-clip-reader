@@ -1,0 +1,30 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #e5eefc; background: #07111f; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at 20% 0%, #16335d 0, #07111f 38rem); }
+main { margin: auto; }
+.popup { width: 360px; min-height: 340px; }
+.popup main { padding: 20px; }
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.logo { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 13px; font-size: 25px; background: linear-gradient(135deg,#38bdf8,#8b5cf6); }
+h1 { margin: 0; font-size: 20px; }
+.brand p, #status, small, #source, #progress { color: #9db0ca; line-height: 1.5; }
+.brand p { margin: 3px 0 0; font-size: 12px; }
+button { width: 100%; border: 1px solid #29405f; border-radius: 10px; padding: 11px 14px; margin: 5px 0; background: #11233d; color: #eaf2ff; font-weight: 700; cursor: pointer; }
+button:hover { background: #193253; }
+button:disabled { opacity: .5; cursor: default; }
+button.primary { background: linear-gradient(135deg,#0284c7,#7c3aed); border: 0; }
+#status { min-height: 40px; font-size: 13px; }
+small { display: block; font-size: 11px; }
+.result { min-height: 100vh; }
+.result main { max-width: 1050px; padding: 42px 24px 80px; }
+.eyebrow { color: #67e8f9; letter-spacing: .14em; font-weight: 800; font-size: 11px; }
+.result h1 { font-size: clamp(30px, 5vw, 52px); }
+.preview { margin-top: 28px; padding: 18px; display: grid; place-items: center; min-height: 240px; border: 1px solid #203755; border-radius: 18px; background: rgba(8,21,38,.74); }
+canvas { max-width: 100%; max-height: 64vh; box-shadow: 0 14px 50px rgba(0,0,0,.4); }
+.actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0 28px; }
+.text-panel { border: 1px solid #203755; border-radius: 18px; padding: 20px; background: rgba(8,21,38,.74); }
+.panel-title { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.panel-title h2 { margin: 0; font-size: 18px; }
+.panel-title button { width: auto; }
+textarea { width: 100%; min-height: 220px; resize: vertical; border: 1px solid #29405f; border-radius: 12px; padding: 14px; background: #050d18; color: #eaf2ff; font: 15px/1.55 ui-monospace, monospace; }
+@media (max-width: 640px) { .actions { grid-template-columns: 1fr; } }

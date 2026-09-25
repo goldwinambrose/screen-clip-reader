@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Screen Clip Reader — Result</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="result">
+  <main>
+    <header><div><p class="eyebrow">SCREEN CLIP READER</p><h1>Your captured area</h1><p id="source"></p></div></header>
+    <section class="preview"><canvas id="canvas"></canvas></section>
+    <div class="actions">
+      <button id="copyImage" class="primary">Copy image</button>
+      <button id="download">Download PNG</button>
+      <button id="read">Read text (OCR)</button>
+    </div>
+    <section class="text-panel">
+      <div class="panel-title"><h2>Extracted text</h2><button id="copyText" disabled>Copy text</button></div>
+      <p id="progress">Choose “Read text” to run private, on-device OCR.</p>
+      <textarea id="text" aria-label="Extracted text" placeholder="Recognized text will appear here…"></textarea>
+    </section>
+  </main>
+  <script src="vendor/tesseract.min.js"></script>
+  <script src="result.js"></script>
+</body>
+</html>
